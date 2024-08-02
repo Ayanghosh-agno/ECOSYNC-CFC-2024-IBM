@@ -41,9 +41,9 @@ Agriculture is a critical industry, supporting the livelihoods of billions and e
 
 #### Data Facts:
 
-- <strong> Soil Degradation: </strong> 33% of soil is moderately to highly degraded [FAO](https://www.fao.org/fileadmin/user_upload/newsroom/docs/FAO-world-soils-report-SUMMARY.pdf)
-- <strong> Water Scarcity:</strong> Agriculture accounts for 70% of global freshwater withdrawals, and inefficient irrigation systems lead to significant wastage [World Bank](https://blogs.worldbank.org/en/opendata/chart-globally-70-freshwater-used-agriculture).
-- <strong> Climate Change:</strong> Unpredictable weather patterns adversely affect crop yields. The Intergovernmental Panel on Climate Change [IPCC](https://www.ipcc.ch/srccl/chapter/chapter-5/) projects a decrease in crop production by up to 2% per decade, while demand is expected to increase by 14% per decade.
+- <strong> Soil Degradation: </strong> 33% of soil is moderately to highly degraded [Watch Here For Details](https://www.fao.org/fileadmin/user_upload/newsroom/docs/FAO-world-soils-report-SUMMARY.pdf)
+- <strong> Water Scarcity:</strong> Agriculture accounts for 70% of global freshwater withdrawals, and inefficient irrigation systems lead to significant wastage [Watch Here For Details](https://blogs.worldbank.org/en/opendata/chart-globally-70-freshwater-used-agriculture).
+- <strong> Climate Change:</strong> Unpredictable weather patterns adversely affect crop yields. The Intergovernmental Panel on Climate Change [Watch Here For Details](https://www.ipcc.ch/srccl/chapter/chapter-5/) projects a decrease in crop production by up to 2% per decade, while demand is expected to increase by 14% per decade.
 
 These issues underscore the need for a comprehensive, technology-driven solution to optimize farming practices, improve soil health, and ensure efficient resource utilization.
 
@@ -64,6 +64,8 @@ EcoSync addresses critical agricultural challenges with integrated hardware and 
 - <strong> Access to expert advice</strong> can be limited. EcoSync leverages Watson X AI for personalized recommendations on fertilizers and crop selection, tailored to each farm's conditions.
 
 - <strong> Language barriers</strong> can limit access to information. EcoSync’s website, integrated with Watson Language Translator, supports eight languages, ensuring inclusivity and widespread adoption.
+
+- Additionally, every device’s GPS data is stored and displayed on a map within the website. This feature allows users to see the precise location of each device and view field and environmental conditions on an interactive map, enhancing their ability to monitor and manage their farms effectively.
 
 By addressing these issues with innovative solutions, EcoSync empowers farmers to enhance productivity, sustainability, and efficiency, ensuring a resilient and prosperous future for agriculture.
 
@@ -105,3 +107,22 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
   - **Language Support:** The website supports eight languages through Watson Language Translator.
 
 EcoSync leverages technology to empower farmers with the information they need to enhance productivity, sustainability, and efficiency in their farming practices. By providing real-time data and AI-driven insights, EcoSync addresses the critical challenges facing modern agriculture, ensuring a more resilient and prosperous future for farmers worldwide.
+
+<h2 align="center"> Technology Implementation <a name="technology-implementation"></a> </h2>
+
+
+### IBM watsonx product(s) used <a name="ibm-ai-services-used">
+
+**Featured watsonx products**
+
+- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI is utilized to offer personalized farming recommendations based on real-time sensor data. By analyzing the collected data on soil health, weather conditions, and other environmental factors, Watson X AI generates actionable insights tailored to each farm's specific needs. These recommendations include optimal fertilizer applications, crop selection, and other farming practices that enhance productivity and sustainability.
+
+- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - Watson Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, Watson Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync.
+
+### Other IBM technology used <a name="other-ibm-technology-used"></a>
+
+**Additional IBM AI services**
+
+- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience.
+
+
