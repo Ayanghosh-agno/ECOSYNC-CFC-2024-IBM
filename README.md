@@ -77,7 +77,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
 
 **1. Transmitter Device:**
   
-  - **Sensors:** Collect data on various environmental - (Atmospheric temperature,humidity,rain %, sunlight %, GPS location) and soil parameters - (N,P,K,EC,PH,temperature,moisture)
+  - **Advanced Sensors:** Capture comprehensive environmental data (atmospheric temperature, humidity, rain %, sunlight %, GPS location) and detailed soil metrics (N, P, K levels, EC, pH, temperature, moisture) for precision farming.
 
   - **Power Supply:** Operates on a 4x4100mAh Li-ion battery charged by 6x5V solar panels, ensuring up to 9 days of operation without sunlight.
 
