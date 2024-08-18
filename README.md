@@ -130,7 +130,28 @@ EcoSync leverages technology to empower farmers with the information they need t
 
 ### Solution Architecture <a name="solution-architecture"></a>
 
-![Solution Architecture](https://github.com/Ayanghosh-agno/)
+![Solution Architecture](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Architecture.png)
+
+
+**1. EcoSync Transmitter**
+   
+The EcoSync Transmitter is equipped with a variety of sensors that monitor key environmental factors such as atmospheric temperature, humidity, rain percentage, sunlight percentage, and GPS location. Additionally, it measures crucial soil parameters including NPK levels, EC (Electrical Conductivity), pH, temperature, and moisture. The transmitter is powered by solar panels with a backup Li-ion battery, ensuring continuous operation. It uses LORA technology to transmit the collected data to the EcoSync Receiver, with a range of up to 5 kilometers.
+
+**3. EcoSync Receiver**
+   
+The EcoSync Receiver collects data from the Transmitter and displays it on its built-in screen for immediate access by the user. The device also has a GSM module that transfers the collected data to the cloud, allowing for remote monitoring and analysis. Users can access real-time field parameters directly through the receiver's interface, providing a hands-on approach to field management.
+
+**4. Cloud Management**
+   
+EcoSync utilizes Firebase as its real-time database to store and manage the data transmitted from the Receiver. This system provides instant access to the environmental and soil metrics for further analysis. Additionally, a scheduled Apex job in Salesforce fetches the data from Firebase and synchronizes it with Salesforce for internal processing and storage.
+
+**5. Ecosync Salesforce Ecosystem**
+   
+EcoSync's Salesforce ecosystem is built on the Service Cloud and Experience Cloud platforms. The Service Cloud handles customer support and service management, integrating custom labels, static resources, and Lightning Web Components (LWC) to provide a seamless experience. APEX code manages backend processes, while chat agents supported by Visualforce pages offer real-time customer assistance. The Experience Cloud powers the EcoSync website, where users can monitor their farm's conditions, access AI-driven recommendations, and benefit from multilingual support, all in one place.
+
+**6. IBM Cloud, Weather API & NEXMO API Integrations**
+
+The system is enhanced with several integrations along with IBM Cloud, including Nexmo SMS API for sending critical alerts to farmers, OpenWeather API for integrating real-time weather data all backed and integrated into Salesforce Experience Cloud (Ecosync Website). 
 
 
 <h2 align="center"> Detailed Description <a name="detail-materials"></a> </h2>
