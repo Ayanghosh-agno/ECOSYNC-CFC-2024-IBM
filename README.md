@@ -169,7 +169,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
  ### Ecosync Receiver <a name="ecosync-receiver"></a>
 
-<img src="https://github.com/Ayanghosh-agno/">
+<img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Hardware/Assets/Receiver.png">
 
 
 -  Pointer to Code :-
