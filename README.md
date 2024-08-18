@@ -175,6 +175,6 @@ The system is enhanced with several integrations along with IBM Cloud, including
 -  Pointer to Code :-
 
     -  [Receiver Code](https://github.com/Ayanghosh-agno/)-
-    -  [Display Screen Code(https://github.com/Ayanghosh-agno/)-
+    -  [Display Screen Code](https://github.com/Ayanghosh-agno/)-
     -  [3D Printed Part]()
  
