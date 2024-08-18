@@ -158,12 +158,13 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 ### Ecosync Transmitter <a name="ecosync-transmitter"></a>
 
-<img src="https://github.com/Ayanghosh-agno/">
+<img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Hardware/Assets/Transmitter.png">
 
 
 -  Pointer to Code :-
 
     -  [Transmitter Code](https://github.com/Ayanghosh-agno/)-
+    -  [3D printed Pard]()
 
 
  ### Ecosync Receiver <a name="ecosync-receiver"></a>
@@ -175,4 +176,5 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
     -  [Receiver Code](https://github.com/Ayanghosh-agno/)-
     -  [Display Screen Code(https://github.com/Ayanghosh-agno/)-
+    -  [3D Printed Part]()
  
