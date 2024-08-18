@@ -128,3 +128,30 @@ EcoSync leverages technology to empower farmers with the information they need t
 - [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience.
 
 
+### Solution Architecture <a name="solution-architecture"></a>
+
+![Solution Architecture](https://github.com/Ayanghosh-agno/)
+
+
+<h2 align="center"> Detailed Description <a name="detail-materials"></a> </h2>
+
+### Ecosync Transmitter <a name="ecosync-transmitter"></a>
+
+<img src="https://github.com/Ayanghosh-agno/">
+
+
+-  Pointer to Code :-
+
+    -  [Transmitter Code](https://github.com/Ayanghosh-agno/)-
+
+
+ ### Ecosync Receiver <a name="ecosync-receiver"></a>
+
+<img src="https://github.com/Ayanghosh-agno/">
+
+
+-  Pointer to Code :-
+
+    -  [Receiver Code](https://github.com/Ayanghosh-agno/)-
+    -  [Display Screen Code(https://github.com/Ayanghosh-agno/)-
+ 
