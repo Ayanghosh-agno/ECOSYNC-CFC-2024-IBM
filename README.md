@@ -176,4 +176,36 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
     -  [Receiver Code](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Receiver) - Microcontroller code to receive data from LORA and send it to Salesforce over cloud using GSM module.
     -  [Display Screen Code](https://github.com/Ayanghosh-agno/) - Here is the code to NEXTION Display to communicate with the microcontroller.
-    -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device. 
+    -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device.
+ 
+### Ecosync Website <a name="ecosync-website"></a>
+
+  - #### Realtime Firebase Data Layer <a name="ecosync-website-firebase"></a>
+  
+  <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Firebase_RealtimeDB.png">
+  
+  -  Pointer to Code :-
+
+      -  [Pushing Data into FIREBASE](https://github.com/Ayanghosh-agno/) - Microcontroller code to push the datalayer received from Ecosync transmitter into FIREBASE using GSM Module.
+        
+      -  [Pulling Data from FIREBASE](https://github.com/Ayanghosh-agno/) - Sheduled Apex class that will fetch the data on every 1 hour of interval from FIREBASE and insert the data into Salesforce Object.
+   
+  - #### Weather & Field Sensors Update <a name="ecosync-website-WeatherFieldSensor"></a>
+
+    <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync_Weather_Field_Sensor.png">
+  
+  -  Pointer to Code :-
+
+      -  [Here](https://github.com/Ayanghosh-agno/) - 
+        
+      -  [Here](https://github.com/Ayanghosh-agno/) -
+   
+  -  #### Field Sensors Alert Using SMS or Email <a name="ecosync-website-FieldSensorAlert"></a>
+
+  <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Sensor%20Updates.png">
+  
+  -  Pointer to Code :-
+
+      -  [Here](https://github.com/Ayanghosh-agno/) - 
+        
+      -  [Here](https://github.com/Ayanghosh-agno/) -    
