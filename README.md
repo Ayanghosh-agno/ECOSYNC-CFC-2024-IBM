@@ -163,8 +163,8 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 -  Pointer to Code :-
 
-    -  [Transmitter Code](https://github.com/Ayanghosh-agno/)-
-    -  [3D printed Pard]()
+    -  [Transmitter Code](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Transmitter) - Microcontroller code to collect all sensor data and send it to over LORA.
+    -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device.
 
 
  ### Ecosync Receiver <a name="ecosync-receiver"></a>
@@ -174,7 +174,6 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 -  Pointer to Code :-
 
-    -  [Receiver Code](https://github.com/Ayanghosh-agno/)-
-    -  [Display Screen Code](https://github.com/Ayanghosh-agno/)-
-    -  [3D Printed Part]()
- 
+    -  [Receiver Code](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Receiver) - Microcontroller code to receive data from LORA and send it to Salesforce over cloud using GSM module.
+    -  [Display Screen Code](https://github.com/Ayanghosh-agno/) - Here is the code to NEXTION Display to communicate with the microcontroller.
+    -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device. 
