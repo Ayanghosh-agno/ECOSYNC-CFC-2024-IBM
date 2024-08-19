@@ -213,3 +213,19 @@ The system is enhanced with several integrations along with IBM Cloud, including
   -  #### Personalised Recommendation using WatsonX AI & Interactive Maps <a name="ecosync-website-AI-Map"></a>
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20AI%20%26%20Interactive%20Map.png">
+
+  -  Pointer to Code :-
+
+      -  [Here](https://github.com/Ayanghosh-agno/) - 
+        
+      -  [Here](https://github.com/Ayanghosh-agno/) -
+   
+  -  #### Historical Data & Graphical Representation <a name="ecosync-website-HistoricData"></a>
+
+  <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Historical%20data.png">
+
+  -  Pointer to Code :-
+
+      -  [Here](https://github.com/Ayanghosh-agno/) - 
+        
+      -  [Here](https://github.com/Ayanghosh-agno/) -  
