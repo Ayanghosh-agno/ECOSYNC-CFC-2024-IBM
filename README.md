@@ -275,3 +275,74 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Device%20Compatibility.png">
   
+
+
+
+
+<h2 align="center"> Additional Details <a name="additional-details"></a> </h2>
+
+### How to run the project <a name="run-the-project"></a>
+
+Step 1: Cloning of the repository :
+
+Our first goal is to set up a developer project which we'll use to modify our application. It starts by cloning the repository. Use the command git clone 
+
+    https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/    
+    
+to clone the repository. Then, open the directory.
+
+    cd Ecosync-Website-Salesforce
+    
+Step 2: Deploying using CLI tools (ex-VS Code) :
+
+Authorize to your Developer Hub (Dev Hub) org.
+
+    sfdx force:auth:web:login -d -a "Ecosync"
+
+If you already have an authorized Dev Hub, set it as the default:
+
+    sfdx force:config:set defaultdevhubusername=<username|alias>
+
+Create a scratch org.
+
+    sfdx force:org:create -s -f config/project-scratch-def.json
+
+If you want to use an existing scratch org, set it as the default:
+
+    sfdx force:config:set defaultusername=<username|alias>
+
+Push your source.
+
+    sfdx force:source:push
+
+Open the scratch org.
+
+    sfdx force:org:open -u Ecosync
+
+4. Configure a Experience Cloud site and place the components as needed pushed into the org.
+
+6. Ensure all security settings and permissions are given for logged in as well as guest users of experience cloud in Salesforce Side.
+
+Note: If you want to learn more about SFDX and CLI command, Click [Here](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/README.md)
+
+### Live Demo <a name="Live-Demo"></a>
+
+We can see live working of Ecosync Website - [Here](https://agno-dev-ed.develop.my.site.com/CFC2024/s/)
+
+  - **For convinience of judging the site has been kept as public accessible.**
+
+<h2 align="center"> About <a name="about"></a> </h2>
+
+### Author<a name="Authors"></a>
+
+<img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ayan%20Ghosh.png" style="max-width: 70px;">
+
+   **Ayan Ghosh**
+
+### License<a name="license"></a>
+This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
+
+### Acknowledgments<a name="acknowledgments"></a>
+
+- Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+
