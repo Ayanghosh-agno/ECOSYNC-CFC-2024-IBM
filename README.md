@@ -274,6 +274,24 @@ The system is enhanced with several integrations along with IBM Cloud, including
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Device%20Compatibility.png">
   
 
+<h2 align="center"> Presentation materials <a name="presentation-materials"></a> </h2>
+
+### Solution Demo Video <a name="solution-demo-video"></a>
+
+[![Solution Demo Video](https://github.com/Ayanghosh-agno/)]()
+
+
+### Project Development Roadmap <a name="project-development-roadmap"></a>
+
+
+Currently ECOSYNC offers the following features :-
+
+
+
+
+
+In future I am planning to enhance/upgrade ECOSYNC in the following way :- 
+
 
 
 
