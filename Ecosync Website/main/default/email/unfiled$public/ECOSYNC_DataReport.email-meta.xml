@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>ECOSYNC_DataReport</name>
+    <style>none</style>
+    <subject>Stay Updated: Your ECO SYNC Report Inside</subject>
+    <textOnly>ECO SYNC - Environmental Data Report
+
+ECO SYNC - Data Report
+
+Category Value
+Atmospheric Temperature  {!Eco_Sync_Sensor_Detail_24_Hour__c.Atmosphere_Temperature__c°C
+Atmospheric Humidity  {!Eco_Sync_Sensor_Detail_24_Hour__c.Atmosphere_Humidity__c}%
+Rain  {!Eco_Sync_Sensor_Detail_24_Hour__c.Rain_Percentage__c}%
+Light Intensity  {!Eco_Sync_Sensor_Detail_24_Hour__c.Light_Intensity__c}%
+Soil Moisture  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Moisture_Percentage__c}%
+Soil Nitrogen  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Nitrogen__c} mg/kg
+Soil Phosphorus  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Phosphorus__c} mg/kg
+Soil Potassium  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Potassium__c} mg/kg
+Soil EC (Electrical Conductivity)  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Electric_Conductivity__c} mS/cm
+Soil pH  {!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Ph__c}
+
+Thank you for using ECO SYNC!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

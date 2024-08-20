@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO SYNC - Environmental Data Report</title>
+    <style>
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="main-body">
+    <div class="container">
+        <div class="header">
+            <img src="https://i.postimg.cc/xT6tSdGJ/Ecosync.png" alt="ECO SYNC Logo">
+        </div>
+        <h1>ECO SYNC - Environmental Data Report</h1>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Atmospheric Temperature</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Atmosphere_Temperature__c}°C</td>
+            </tr>
+            <tr>
+                <td>Atmospheric Humidity</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Atmosphere_Humidity__c}%</td>
+            </tr>
+            <tr>
+                <td>Rain</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Rain_Percentage__c}%</td>
+            </tr>
+            <tr>
+                <td>Light Intensity</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Light_Intensity__c}%</td>
+            </tr>
+            <tr>
+                <td>Soil Moisture</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Moisture_Percentage__c}%</td>
+            </tr>
+            <tr>
+                <td>Soil Nitrogen</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Nitrogen__c} mg/kg</td>
+            </tr>
+            <tr>
+                <td>Soil Phosphorus</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Phosphorus__c} mg/kg</td>
+            </tr>
+            <tr>
+                <td>Soil Potassium</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Potassium__c} mg/kg</td>
+            </tr>
+            <tr>
+                <td>Soil EC (Electrical Conductivity)</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Electric_Conductivity__c} mS/cm</td>
+            </tr>
+            <tr>
+                <td>Soil pH</td>
+                <td>{!Eco_Sync_Sensor_Detail_24_Hour__c.Soil_Ph__c}</td>
+            </tr>
+        </table>
+        <div class="footer">
+            <p>Thank you for using ECO SYNC!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
