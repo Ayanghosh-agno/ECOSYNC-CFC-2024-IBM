@@ -19,7 +19,19 @@
       - [Solution Architecture](#solution-architecture)
 
   -  [Detailed Description](#detail-materials)
-     
+      -  [Ecosync Transmitter](#ecosync-transmitter)
+      -  [Ecosync Receiver](#ecosync-receiver)
+      -  [Ecosync Website](#ecosync-website)
+          - [Realtime Firebase Data Layer](#ecosync-website-firebase)
+          - [Weather & Field Sensors Update](#ecosync-website-WeatherFieldSensor)
+          - [Field Sensors Alert Using SMS or Email](#ecosync-website-FieldSensorAlert)
+          - [Personalised Recommendation using WatsonX AI & Interactive Maps](#ecosync-website-AI-Map)
+          - [Historical Data & Graphical Representation](#ecosync-website-HistoricData)
+          - [Contact Us/Case Creation](#ecosync-website-contactUs)
+          - [Ecosync Bot & Live Agent](#ecosync-website-bot)
+          - [Ecosync Login Page & Multilingual Capability](#ecosync-website-multilingual)
+          - [Ecosync Device Compatibility](#ecosync-website-devices)
+
   - [Presentation materials](#presentation-materials)
       - [Solution Demo Video](#solution-demo-video)
       - [Project development roadmap](#project-development-roadmap)
@@ -258,3 +270,8 @@ The system is enhanced with several integrations along with IBM Cloud, including
   -  Pointer to Code :-
 
       -  [Here](https://github.com/Ayanghosh-agno/) - 
+
+  -  #### Ecosync Device Compatibility <a name="ecosync-website-devices"></a>
+
+  <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Device%20Compatibility.png">
+  
