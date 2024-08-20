@@ -1,0 +1,8 @@
+.chartTitle{
+	display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 900;
+}

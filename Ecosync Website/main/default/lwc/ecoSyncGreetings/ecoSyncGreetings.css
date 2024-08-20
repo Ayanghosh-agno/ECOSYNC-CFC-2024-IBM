@@ -1,0 +1,64 @@
+/* greeting.css */
+.greeting-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #0070d2a1, #082f81a8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInUp 0.5s ease;
+}
+
+.greeting-message {
+    color: #fff; /* Change text color for better contrast */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    
+    animation-name: bounceUpDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+ @keyframes bounceUpDown {
+        0% {
+                transform: translateY(0);
+        }
+        100% {
+                transform: translateY(0.625rem);
+        }
+    }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.show-video{
+    position: fixed;
+    width: -webkit-fill-available;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+        display:block;
+    }
+@media only screen and (max-width: 1710px) {
+    .show-video{
+        display:none;
+    }
+    
+}
+@media only screen and (max-width: 710px) {
+  .greeting-message {
+      font-size: 20px;
+  }
+    
+}

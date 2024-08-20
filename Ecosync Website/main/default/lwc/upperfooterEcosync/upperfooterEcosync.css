@@ -1,0 +1,36 @@
+.eco-sync-functionality {
+    padding: 20px;
+    background-color: #f9f9f9cf;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.eco-sync-functionality h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.credits {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.eco-sync-functionality p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 710px) {
+    .eco-sync-functionality p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.eco-sync-functionality h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+    
+}

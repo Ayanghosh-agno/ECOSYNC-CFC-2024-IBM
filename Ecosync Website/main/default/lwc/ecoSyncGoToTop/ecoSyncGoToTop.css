@@ -1,0 +1,47 @@
+.goToTopbtn {
+
+        right: -100%; /* Start outside of the viewport */
+        /* display: none; Initially hide the button */
+        position: fixed;
+        bottom: 35px;
+        /* right: 40px; */
+        z-index: 99;
+        background-color: #2685d73d;
+        color: #fff;
+        /* border: none; */
+        border-radius: 50%;
+        border: 2px solid #00347d;
+        cursor: pointer;
+        padding: 20px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: right 0.5s ease-in-out, background-color 0.25s linear;
+        
+}
+img {
+        width: 40px;
+    height: 40px;
+}
+.goToTopbtn:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.show{
+	/* display: block; */
+        right: 50%;
+}
+@media only screen and (max-width: 710px) {
+   img {
+        width: 30px;
+    height: 30px;
+}
+.goToTopbtn {
+padding: 7px;
+}
+.show{
+	/* display: block; */
+        right: 80%;
+}
+}

@@ -1,0 +1,140 @@
+.primary-metric {
+    color: #333333;
+    text-align: center;
+    /* padding: 20px; */
+    font-size: 20px;
+    font-weight: 900;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.secondary-metric {
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.wind-status-unit {
+    font-size: 12px;
+}
+
+.sunset-sunrise-time {
+    color: #333333;
+    text-align: center;
+    /* padding: 20px; */
+    font-size: 20px;
+    font-weight: 900;
+}
+.highlight-box {
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    width: 308px;
+    height: 188px;
+}
+
+.highlight-box p {
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.highlight-header {
+    color: #b8b8b8;
+}
+ .weather-info {
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9a1;
+    margin-bottom: 14px;    
+}
+@media only screen and (max-width: 1730px) {
+    .weather-info {
+    padding: 0;
+}
+}
+.weather-container {
+    font-family: Arial, sans-serif;
+}
+
+.weather-details {
+   font-family: Arial, sans-serif;
+    
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9a1;
+    margin-left: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 1730px) {
+    .weather-details {
+    margin-left: 0px;
+    /* padding: 0px; */
+    margin: auto;
+}
+}
+@media only screen and (max-width: 1120px) {
+    .weather-details {
+    padding: 0px; 
+}
+}
+
+.side-panel {
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-color: white;
+    border: none;
+}
+
+.weather-temperature {
+    font-size: 60px;
+    font-weight: 200;
+}
+
+.weather-date-time {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+.weather-location {
+    /* background-color: #d9d9d9; */
+    border-radius: 18px;
+}
+
+.weather-location p {
+    font-weight: 400;
+    color: white;
+}
+
+
+
+.current-time {
+    color: #b8b8b8;
+}
+
+.weather-description {
+    font-size: 17px;
+    font-weight: 200;
+    color: #b8b8b8;
+}
+.weather-container-box{
+    min-width: 350px;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.weather-container-box:hover {
+    transform: translateY(-5px);
+}

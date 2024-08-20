@@ -1,0 +1,13 @@
+<!-- greeting.html -->
+<template>
+	<div class="greeting-container">
+		<p class="greeting-message">{greetingMessage}</p>
+	</div>
+
+	<div lwc:if={desktopView}>
+	<video  class="show-video" autoplay muted loop id="myVideo">
+		<source src="https://videos.pexels.com/video-files/3145223/3145223-uhd_3840_2160_30fps.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+	</div>
+</template>

@@ -1,0 +1,88 @@
+/* sensorDataDisplay.css */
+
+.dropdown-container {
+    width: 180px;
+    top: -25px;
+    position: relative;
+}
+
+.button-class{
+    top: -6px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9a1;
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0070d2;
+    margin-bottom: 15px;
+}
+
+.parameters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.parameter {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.parameter:hover {
+   transform: scale(1.1);
+}
+
+.label {
+    font-weight: bold;
+    color: #0070d2;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.value {
+    color: #333333;
+    text-align: center;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 900;
+}
+.icon img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.error-message {
+    color: red;
+    font-family: auto;
+    font-size: 17px;
+    margin-top: 5px;
+}

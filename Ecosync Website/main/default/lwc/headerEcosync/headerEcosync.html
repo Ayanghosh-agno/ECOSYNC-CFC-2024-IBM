@@ -1,0 +1,26 @@
+<template>
+	<header class="eco-sync-header">
+		<div class="branding">
+			<img src={logoUrl} alt="EcoSync Logo" />
+			<h1>{projectTitle}</h1>
+		</div>
+		<nav class="nav-links">
+			<ul>
+				<li><a href="javascript:void(0)" onclick={handleNavigation} data-destination="Home">{home}</a></li>
+				<!-- <li><a href="javascript:void(0)" onclick={handleNavigation} data-destination="About">About</a></li> -->
+				<li><a href="javascript:void(0)" onclick={handleNavigation} data-destination="Contact">{contactUs}</a></li>
+				<li><a href={logoutLink} onclick={handleNavigation} data-destination="LogOut">{logOut}</a></li>
+			</ul>
+			<div class="language-selector">
+				<select onchange={handleLanguageChange}>
+                <template for:each={languages} for:item="language">
+                        <option if:true={language.selected} key={language.value} value={language.value} selected>{language.label}</option>
+                        <option if:false={language.selected} key={language.value} value={language.value}>{language.label}</option>
+                </template>
+            </select>
+			</div>
+		</nav>
+		
+	</header>
+
+</template>

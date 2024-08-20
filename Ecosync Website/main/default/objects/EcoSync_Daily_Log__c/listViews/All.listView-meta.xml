@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Date__c</columns>
+    <columns>Atmosphere_Humidity__c</columns>
+    <columns>Atmosphere_Temperature__c</columns>
+    <columns>Light_Intensity__c</columns>
+    <columns>Rain_Percentage__c</columns>
+    <columns>Soil_Electric_Conductivity__c</columns>
+    <columns>Soil_Moisture_Percentage__c</columns>
+    <columns>Soil_Nitrogen__c</columns>
+    <columns>Soil_Ph__c</columns>
+    <columns>Soil_Phosphorus__c</columns>
+    <columns>Soil_Potassium__c</columns>
+    <columns>Soil_Temperature__c</columns>
+    <columns>Transmitter_Battery__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

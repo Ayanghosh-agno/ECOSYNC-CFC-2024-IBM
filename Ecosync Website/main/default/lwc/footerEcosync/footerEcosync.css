@@ -1,0 +1,95 @@
+.eco-sync-footer {
+    background-color: #0070d2a1;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+}
+
+.contact-info,.about-us,
+.social-links {
+    flex: 1;
+}
+
+.contact-info h3,.about-us h3,
+.social-links h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info p,.about-us p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.about-us img {
+     width: 90px; /* Adjust as per your logo size */
+    height: 90px; /* Adjust as per your logo size */
+}
+.about-us{
+    text-align: left;
+    max-width: 31%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.copyright {
+    /* margin-top: 30px; */
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+@media only screen and (max-width: 517px) {
+
+    .about-us img {
+     width: 60px; /* Adjust as per your logo size */
+    height: 60px; /* Adjust as per your logo size */
+    }
+    .contact-info h3,.about-us h3,
+.social-links h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.social-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.social-links ul li {
+    margin-bottom: 2px;
+}
+.about-us{
+    text-align: left;
+    max-width: 31%;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+.contact-info p,.about-us p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+}

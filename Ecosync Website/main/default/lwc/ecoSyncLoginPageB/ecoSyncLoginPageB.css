@@ -1,0 +1,16 @@
+.show-video{
+    position: fixed;
+    /* width: -webkit-fill-available; */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    display:block;
+    }
+@media only screen and (max-width: 1710px) {
+    .show-video{
+        display:none;
+    }
+    
+}

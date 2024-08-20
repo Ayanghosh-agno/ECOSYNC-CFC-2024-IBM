@@ -1,0 +1,100 @@
+<!-- sensorDataDisplay.html -->
+<template>
+	<div class="card">
+		<div lwc:if={isLoading}>
+			<lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+		</div>
+		<template for:each={sensorData} for:item="data">
+			
+			<div key={data.Id} class="">
+
+				<div lwc:if={sensorAvgType} class="title" style="text-align: center;">{title}
+				</div>
+				<div lwc:else class="title" style="text-align: center;">{title} : {data.CreatedDate}
+				</div>
+
+				<!-- <div class="dropdown-container">
+					<lightning-combobox name="dataOptions" value={selectedOption} options={options}
+						onchange={handleOptionChange} class="dropdown"></lightning-combobox>
+				</div> -->
+				<div class="button-class">
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-large-size_3-of-12 slds-medium-size_3-of-12 slds-size_12-of-12"
+							style="position: relative;top: -9px;">
+							<lightning-combobox name="dataOptions" value={selectedOption} options={options}
+								onchange={handleOptionChange} class="dropdown"></lightning-combobox>
+						</div>
+						<div class="slds-col slds-large-size_3-of-12 slds-medium-size_1-of-12 slds-size_12-of-12"
+							style="text-align: center;margin: 10px auto;">
+
+						</div>
+						<div class="slds-col slds-large-size_3-of-12 slds-medium-size_1-of-12 slds-size_12-of-12"
+							style="text-align: center;margin: 10px auto;">
+
+						</div>
+						<div class="slds-col slds-large-size_3-of-12 slds-medium-size_7-of-12 slds-size_12-of-12"
+							style="text-align: center;margin: 10px auto;">
+							<lightning-button-group>
+								<lightning-button variant="Brand" label={emailBttn} title={emailBttn}
+									onclick={handleNotificationSendEmail}></lightning-button>
+
+								<lightning-button variant="Brand Outline" label={smsBttn} title={smsBttn}
+									onclick={handleNotificationSendSMS}></lightning-button>
+
+								<lightning-button variant="success" label={detailBttn} title={detailBttn}
+									onclick={handleListViewNavigation}></lightning-button>
+							</lightning-button-group>
+						</div>
+					</div>
+				</div>
+				<div class="parameters">
+					<template for:each={parameterData} for:item="parameter">
+						<div key={parameter.key} class="parameter">
+							<div class="icon">
+								<img src={parameter.image} alt={parameter.label} />
+                                </div>
+								<div class="label">{parameter.label}</div>
+								<div class="value">{parameter.value}
+								</div>
+							</div>
+					</template>
+				</div>
+			</div>
+		</template>
+	</div>
+	<template lwc:if={modalActive}>
+		<!-- Modal/Popup Box LWC starts here -->
+		<section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+			aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+			<div class="slds-modal__container">
+				<!-- Modal/Popup Box LWC header here -->
+				<header class="slds-modal__header">
+					<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"  onclick={closeModal}>
+                                                                                <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small" name="close" onclick={closeModal} ></lightning-icon>
+                                                                                <span class="slds-assistive-text">Close</span>
+                                                                            </button>
+					<h2 class="slds-text-heading_medium slds-hyphenate">{modalHeader}</h2>
+				</header>
+				<!-- Modal/Popup Box LWC body starts here -->
+				<div class="slds-modal__content slds-p-around_medium">
+					<div lwc:if={emailField}>
+						<label for="email">Email:</label>
+						<input type="email" id="email" placeholder="E.g - someone@abc.com" name="email" oninput={handleInputChange} required>
+						<div class="error-message" if:true={errors.email}>{errors.email}</div>
+					</div>
+					<div lwc:if={phoneField}>
+						<label for="phone">Phone:</label>
+						<input type="text" id="phone" placeholder="E.g - +978888888888" name="phone" oninput={handleInputChange} required>
+						<div class="error-message" if:true={errors.phone}>{errors.phone}</div>
+					</div>
+				</div>
+				<!-- Modal/Popup Box LWC footer starts here -->
+				<footer class="slds-modal__footer">
+					<lightning-button variant="brand" label="Submit" title="Submit" onclick={submitModal}
+						class="slds-m-left_small" disabled={disable_submitbtn}></lightning-button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>
