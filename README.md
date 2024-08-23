@@ -73,7 +73,7 @@ EcoSync addresses critical agricultural challenges with integrated hardware and 
 
 - Farmers often lack <strong> precise information </strong>, leading to inefficient resource use. Our comprehensive data collection and AI recommendations enable precise resource management, improving yields and reducing costs.
 
-- Many farmers lack access to <strong> real-time data and timely support </strong>. EcoSync’s receiver displays real-time data and transmits it to the cloud every 15 seconds. The website provides instant access to this data and customer support through a chatbot and live agents.
+- Many farmers lack access to <strong> real-time data and timely support </strong>. EcoSync’s receiver displays real-time data and transmits it to the cloud every 15 seconds. The website provides instant access to this data.
 
 - <strong> Access to expert advice</strong> can be limited. EcoSync utilizes Watson X AI to provide personalized recommendations on fertilizers and crop selection, tailored to each farm's unique conditions. Additionally, EcoSync features a WatsonX Assistant-powered chatbot for quick solutions or seamless connection to a live agent for support.
 
