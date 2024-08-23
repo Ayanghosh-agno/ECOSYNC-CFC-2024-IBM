@@ -75,11 +75,11 @@ EcoSync addresses critical agricultural challenges with integrated hardware and 
 
 - Many farmers lack access to <strong> real-time data and timely support </strong>. EcoSync’s receiver displays real-time data and transmits it to the cloud every 15 seconds. The website provides instant access to this data and customer support through a chatbot and live agents.
 
-- <strong> Access to expert advice</strong> can be limited. EcoSync leverages Watson X AI for personalized recommendations on fertilizers and crop selection, tailored to each farm's conditions.
+- <strong> Access to expert advice</strong> can be limited. EcoSync utilizes Watson X AI to provide personalized recommendations on fertilizers and crop selection, tailored to each farm's unique conditions. Additionally, EcoSync features a WatsonX Assistant-powered chatbot for quick solutions or seamless connection to a live agent for support.
 
 - <strong> Language barriers</strong> can limit access to information. EcoSync’s website, integrated with Watson Language Translator, supports eight languages, ensuring inclusivity and widespread adoption.
 
-- Additionally, every device’s GPS data is stored and displayed on a map within the website. This feature allows users to see the precise location of each device and view field and environmental conditions on an interactive map, enhancing their ability to monitor and manage their farms effectively.
+- Additionally, every device’s GPS data is stored and displayed on a map within the website. This feature allows users to see the precise location of each device and view field and environmental conditions on an interactive map, enhancing their ability to <strong> monitor and manage their farms effectively </strong>.
 
 By addressing these issues with innovative solutions, EcoSync empowers farmers to enhance productivity, sustainability, and efficiency, ensuring a resilient and prosperous future for agriculture.
 
@@ -114,7 +114,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
 
   - **Notifications:** Sends real-time sensor data via email or SMS.
 
-  - **Support:** Users can lodge cases and access a chatbot for quick queries or live agent support for more complex issues.
+  - **Support:** Users can lodge cases and access a WatsonX Assistant powered chatbot for quick queries or live agent support for more complex issues.
 
   - **AI Integration:** Watson X AI offers personalized recommendations to optimize farming practices.
 
