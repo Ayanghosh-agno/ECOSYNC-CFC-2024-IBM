@@ -229,7 +229,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
   -  Pointer to Code :-
 
       -  [ecoSync_WatsonXAI](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSync_WatsonXAI) - LWC where the WatsonX.ai recommendations are shown and formated.
-      -  [IBMWatsonXAIRecommendation.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMWatsonXAIRecommendation.cls) - Apex class to make callout to WatsonX.ai
+      -  [IBMWatsonXAIRecommendation.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMWatsonXAIRecommendation.cls) - Apex class to make callout to WatsonX.ai for personalized reccomendations depending upon the latest sensors value & field conditions.
       -  [IBMIdentityAuthToken](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMIdentityAuthToken.cls) - APEX class to get the IBM Cloud authorization token.
       -  [ecoSyncMapComponent](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncMapComponent) - LWC where the map pointers with field parameters are shown.
    
