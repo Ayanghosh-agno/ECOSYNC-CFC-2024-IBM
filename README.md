@@ -130,7 +130,7 @@ EcoSync leverages technology to empower farmers with the information they need t
 **Featured watsonx products**
 
 - [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI is utilized to offer personalized farming recommendations based on real-time sensor data. By analyzing the collected data on soil health, weather conditions, and other environmental factors, Watson X AI generates actionable insights tailored to each farm's specific needs. These recommendations include optimal fertilizer applications, crop selection, and other farming practices that enhance productivity and sustainability.[Watch Here For Details](#ecosync-website-AI-Map)  
-- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - Watson Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, Watson Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync.[Watch Here For Details](#ecosync-website-bot)  
+- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WatsonX Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, WatsonX Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync.[Watch Here For Details](#ecosync-website-bot)  
 
 ### Other IBM technology used <a name="other-ibm-technology-used"></a>
 
@@ -239,9 +239,8 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
+      -  [ecoSync_AvgChart](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSync_AvgChart) - LWC to display the graphical representation of historical data and customised selection of sensor parameters that needs to be displayed
         
-      -  [Here](https://github.com/Ayanghosh-agno/) -
    
   -  #### Contact Us/Case Creation <a name="ecosync-website-contactUs"></a>
 
@@ -249,28 +248,32 @@ The system is enhanced with several integrations along with IBM Cloud, including
   
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
-        
-      -  [Here](https://github.com/Ayanghosh-agno/) -
-   
+      -  [ecoSync_ContactUsForm](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSync_ContactUsForm) - LWC to take input from the user and show then Case Number after succesfully creating the Case.
+      -  [EcoSyncController.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncController.cls) - APEX class to insert the case in Case Object and send email to the user.
+      -  [ECOSYNC_CaseCreationTemplate.email](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/email/unfiled%24public/ECOSYNC_CaseCreationTemplate.email)  - Email template for case creation email.
+
+
   -  #### Ecosync Bot & Live Agent <a name="ecosync-website-bot"></a>
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Bot.png">
   
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
-        
-      -  [Here](https://github.com/Ayanghosh-agno/) -
-   
-  
+      -  [Eco_Sync_Support.liveChatAgentConfig-meta.xml](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/liveChatAgentConfigs) - Chat Agent configuration Metadata file for salesforce.
+      -  [ECO_SYNC_QUEUE.liveChatButton-meta.xml](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/liveChatButtons) - Chat Button configuration metadata file for salesforce.
+      -  [live_agent_setup_flow.liveChatDeployment-meta.xml](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/liveChatDeployments) - Chat Deployment metadata file for salesforce.
+      -  [EcoSyncLiveAgent.page](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/pages) - Visualforce page in order to show Chat Agent the context of the chat or history of the chat.
+      -  [WatsonXAssistant.js](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/staticresources/WatsonXAssistant.js) - The JS file to load WatsonX Assistant in our Ecosync Website.
+      -  [footerEcosync](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/footerEcosync) - LWC from where the WatsonX Assistant JS file is initialized into Ecosync Website.   
+
+
   -  #### Ecosync Login Page & Multilingual Capability <a name="ecosync-website-multilingual"></a>
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Multilingual%20capability.png">
   
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
+      -  [IBMTranslator.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMTranslator.cls) - Apex class from where all the language translation is done thorugh API callout of Watson Language Translator.
 
   -  #### Ecosync Device Compatibility <a name="ecosync-website-devices"></a>
 
