@@ -173,7 +173,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 -  Pointer to Code :-
 
-    -  [Transmitter Code](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Transmitter) - Microcontroller code to collect all sensor data and send it to over LORA.
+    -  [Ecosync Transmitter](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Transmitter) - Microcontroller code to collect all sensor data and send it to over LORA.
     -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device.
 
 
@@ -184,8 +184,8 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 -  Pointer to Code :-
 
-    -  [Receiver Code](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Receiver) - Microcontroller code to receive data from LORA and send it to Salesforce over cloud using GSM module.
-    -  [Display Screen Code](https://github.com/Ayanghosh-agno/) - Here is the code to NEXTION Display to communicate with the microcontroller.
+    -  [Ecosync Receiver](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Receiver) - Microcontroller code to receive data from LORA and send it to Salesforce over cloud using GSM module.
+    -  [Ecosync Display](https://github.com/Ayanghosh-agno/) - Here is the code to NEXTION Display to communicate with the microcontroller.
     -  [3D printed Part](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Hardware%203D%20Printed%20Parts) - Here is the 3-D printed design that has been used in order to make the body of the device.
  
 ### Ecosync Website <a name="ecosync-website"></a>
@@ -196,19 +196,21 @@ The system is enhanced with several integrations along with IBM Cloud, including
   
   -  Pointer to Code :-
 
-      -  [Pushing Data into FIREBASE](https://github.com/Ayanghosh-agno/) - Microcontroller code to push the datalayer received from Ecosync transmitter into FIREBASE using GSM Module.
-        
-      -  [Pulling Data from FIREBASE](https://github.com/Ayanghosh-agno/) - Sheduled Apex class that will fetch the data on every 1 hour of interval from FIREBASE and insert the data into Salesforce Object.
+      -  [Ecosync Receiver](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Hardware/Ecosync%20Receiver) - Microcontroller code to push the datalayer received from Ecosync transmitter into FIREBASE using GSM Module.
+      -  [Schedule24HourSensorLog.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/Schedule24HourSensorLog.cls) - Schedule Apex class that is used to fetch the data from Firebase on every 1 hour. 
+      -  [FirebaseCallout.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/FirebaseCallout.cls) - APEX API callout class that makes the API call out in order to get the latest sensor data from the realtime DB.       
+      -  [EcoSyncDailySchedule.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncDailySchedule.cls) - Schedule APEX class to store the each day average data in the Salesforce Object at the end of the day.
+                
    
   - #### Weather & Field Sensors Update <a name="ecosync-website-WeatherFieldSensor"></a>
 
     <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync_Weather_Field_Sensor.png">
   
   -  Pointer to Code :-
-
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
-        
-      -  [Here](https://github.com/Ayanghosh-agno/) -
+    
+      -  [EcoSyncController.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncController.cls) - Apex class to fetch the latest and 30days average sensor data from Salesforce Object.
+      -  [weatherInfoUpdateEcosync](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/weatherInfoUpdateEcosync) - LWC to show the current weather depending upon the geo-location & doing a client side API call to openWeather API.
+      -  [ecoSyncSensorsData](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncSensorsData) - LWC to show the sensor details section, Notification buttons & Detail page button.
    
   -  #### Field Sensors Alert Using SMS or Email <a name="ecosync-website-FieldSensorAlert"></a>
 
@@ -216,9 +218,9 @@ The system is enhanced with several integrations along with IBM Cloud, including
   
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
-        
-      -  [Here](https://github.com/Ayanghosh-agno/) -
+      -  [EcoSyncController.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncController.cls) - Apex class to fetch the desired sensor data and send it to either mobile or email provided by user.
+      -  [ECOSYNC_DataReport.email](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/email/unfiled%24public) - Custom Email Template used to send email with sensors data to the user.
+      -  [ecoSyncSensorsData](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncSensorsData) - LWC to receive the user email id / mobile number using a modal popup on click of the action buttons.
    
   -  #### Personalised Recommendation using WatsonX AI & Interactive Maps <a name="ecosync-website-AI-Map"></a>
 
@@ -226,9 +228,10 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
   -  Pointer to Code :-
 
-      -  [Here](https://github.com/Ayanghosh-agno/) - 
-        
-      -  [Here](https://github.com/Ayanghosh-agno/) -
+      -  [ecoSync_WatsonXAI](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSync_WatsonXAI) - LWC where the WatsonX.ai recommendations are shown and formated.
+      -  [IBMWatsonXAIRecommendation.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMWatsonXAIRecommendation.cls) - Apex class to make callout to WatsonX.ai
+      -  [IBMIdentityAuthToken](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMIdentityAuthToken.cls) - APEX class to get the IBM Cloud authorization token.
+      -  [ecoSyncMapComponent](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncMapComponent) - LWC where the map pointers with field parameters are shown.
    
   -  #### Historical Data & Graphical Representation <a name="ecosync-website-HistoricData"></a>
 
