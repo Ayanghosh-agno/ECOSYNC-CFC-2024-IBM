@@ -157,7 +157,7 @@ EcoSync utilizes Firebase as its real-time database to store and manage the data
 
 **5. Ecosync Salesforce Ecosystem**
    
-EcoSync's Salesforce ecosystem is built on the Service Cloud and Experience Cloud platforms. The Service Cloud handles customer support and service management, integrating custom labels, static resources, and Lightning Web Components (LWC) to provide a seamless experience. APEX code manages backend processes, while chat agents supported by Visualforce pages offer real-time customer assistance. The Experience Cloud powers the EcoSync website, where users can monitor their farm's conditions, access AI-driven recommendations, and benefit from multilingual support, all in one place.
+EcoSync's Salesforce ecosystem is powered by Service Cloud and Experience Cloud. Service Cloud manages customer support with a robust setup that includes chat agent configuration, queues, custom labels, and objects for data storage. Live agents are further supported by a Visualforce component, enabling them to access previous chat contexts, whether from the chatbot or earlier interactions. Experience Cloud drives the EcoSync website, where data is visually represented using Lightning Web Components (LWC), and backend processes are efficiently handled through APEX. This integration allows users to monitor farm conditions, receive AI-driven recommendations, and access multilingual support, all within a unified platform.
 
 **6. IBM Cloud, Weather API & NEXMO API Integrations**
 
