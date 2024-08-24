@@ -284,7 +284,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 ### Solution Demo Video <a name="solution-demo-video"></a>
 
-[![Solution Demo Video](https://github.com/Ayanghosh-agno/)]()
+[![Solution Demo Video](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Thumbnail.png)]()
 
 
 ### Project Development Roadmap <a name="project-development-roadmap"></a>
