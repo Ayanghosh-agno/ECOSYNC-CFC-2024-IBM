@@ -292,14 +292,30 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
 Currently ECOSYNC offers the following features :-
 
-
-
-
+  - **Real-Time Environmental Monitoring**: Collects and displays data on atmospheric temperature, humidity, rain percentage, sunlight percentage, and GPS location.
+  - **Soil Condition Analysis**: Monitors and provides detailed metrics on soil NPK levels, electrical conductivity (EC), pH, temperature, and moisture.
+  - **Interactive Mapping**: Displays land details on an interactive map with clickable pointers that reveal detailed field data.
+  - **Solar-Powered Transmitter**: Utilizes solar panels to charge the Li-ion battery, ensuring continuous operation of the transmitter device.
+  - **LORA Communication**: Enables data transmission from the transmitter to the receiver over a range of up to 5 kilometers.
+  - **GSM-Based Cloud Data Sync**: Transfers collected data to the cloud every 15 seconds for remote access and storage using a GSM module.
+  - **AI-Driven Farming Recommendations**: Provides personalized recommendations on fertilizers and crop selection using Watson X AI, tailored to each farm’s conditions.
+  - **Multilingual Support**: Powered by Watson Language Translator, the platform supports eight languages, making it accessible to a global audience.
+  - **Chatbot and Live Agent Support**: Includes a Watson Assistant-powered chatbot for quick resolutions and seamless transition to live agents via Visualforce pages for real-time assistance. All chat interactions, transcripts, and user information are stored in Service Cloud objects.
+  - **Comprehensive Data Visualization**: Visualizes real-time and historical farm data on the EcoSync website using graphical or tabular foramt.
+  - **Weather Integration**: Integrates real-time weather data via the OpenWeather API to provide current and forecasted weather conditions.
+  - **Case Management**: Enables users to lodge support cases directly through the EcoSync website for any issues or assistance.
+  - **SMS or Email Notifications**: Sends SMS or email notifications to users with the latest data updates, ensuring they stay informed about their farm's current conditions.
+  - **Offline Operation**:The EcoSync transmitter and receiver can operate independently of network or Wi-Fi connectivity, ensuring uninterrupted functionality in remote areas.
 
 In future I am planning to enhance/upgrade ECOSYNC in the following way :- 
 
-
-
+  - **SOS System**: Add a voice-enabled SOS system on the EcoSync Receiver, allowing farmers to directly call customer service using the device’s built-in GSM module.
+  - **Alert System**: Implement an alert system that notifies farmers when specific environmental or soil parameters reach critical thresholds.
+  - **Enhanced User Interface**: Upgrade the EcoSync website and app interface to improve user experience and provide more intuitive navigation and data interaction.
+  - **In-Depth Soil Health Analysis**: Expand soil analysis capabilities to include more detailed health indicators and offer tailored recommendations for soil treatment and improvement.
+  - **E-Commerce Integration**: Analyze collected data and recommend relevant agricultural products directly through the EcoSync website's e-commerce platform, enabling farmers to make informed purchasing decisions based on their farm's specific needs.
+ 
+![Roadmap](https://github.com/Ayanghosh-agno)
 
 <h2 align="center"> Additional Details <a name="additional-details"></a> </h2>
 
