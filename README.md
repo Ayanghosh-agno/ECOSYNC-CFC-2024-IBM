@@ -264,8 +264,8 @@ The system is enhanced with several integrations along with IBM Cloud, including
       -  [live_agent_setup_flow.liveChatDeployment-meta.xml](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/liveChatDeployments) - Chat Deployment metadata file for salesforce.
       -  [EcoSyncLiveAgent.page](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/pages) - Visualforce page in order to show Chat Agent the context of the chat or history of the chat.
       -  [WatsonXAssistant.js](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/staticresources/WatsonXAssistant.js) - The JS file to load WatsonX Assistant in our Ecosync Website.
-      -  [footerEcosync](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/footerEcosync) - LWC from where the WatsonX Assistant JS file is initialized into Ecosync Website.   
-
+      -  [footerEcosync](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/footerEcosync) - LWC from where the WatsonX Assistant JS file is initialized into Ecosync Website.
+      -  [ecosync-bot-action-v4.json](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/staticresources/ecosync-bot-action-v4.json) - WatsonX Assistant Action file for Ecosync Bot from IBM Cloud.
 
   -  #### Ecosync Login Page & Multilingual Capability <a name="ecosync-website-multilingual"></a>
 
