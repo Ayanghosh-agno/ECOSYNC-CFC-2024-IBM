@@ -16,9 +16,8 @@ global class EcoSyncDailySchedule implements Schedulable {
                                                                 Soil_Moisture_Percentage__c,Transmitter_Battery__c 
                                                                 FROM Eco_Sync_Sensor_Detail_24_Hour__c 
                                                                 WHERE Date__c = :escDate[0].Date__c];
-            
-            if(results.size() > 0){
-
+            List<EcoSync_Daily_Log__c> dailyLogcheck = [SELECT Id FROM EcoSync_Daily_Log__c WHERE Date__c = :escDate[0].Date__c];
+            if(results.size() > 0 && dailyLogcheck.size() == 0){
                 EcoSync_Daily_Log__c ec = new EcoSync_Daily_Log__c();
                 ec.Date__c = escDate[0].Date__c;
                 ec.Atmosphere_Temperature__c= (Decimal) results[0].get('avgAtmTemp');
@@ -35,7 +34,7 @@ global class EcoSyncDailySchedule implements Schedulable {
                 ec.Transmitter_Battery__c = (Decimal) results[0].get('avgTransBat');
                 insert ec;
             }
-            delete [SELECT Id FROM Eco_Sync_Sensor_Detail_24_Hour__c  WHERE Date__c = :escDate[0].Date__c ];
+            delete [SELECT Id FROM Eco_Sync_Sensor_Detail_24_Hour__c];
         } 
     }
 }
