@@ -1,5 +1,5 @@
 import { LightningElement, wire, track } from 'lwc';
-import getOpportunityList from '@salesforce/apex/DailyDataFetchController.getOpportunityList';
+import getSoilEnvironParam from '@salesforce/apex/EcoSyncController.getSoilEnvironParam';
 
 export default class EcoSync_AvgChart extends LightningElement {
 
@@ -124,7 +124,7 @@ export default class EcoSync_AvgChart extends LightningElement {
     }
 
 
-    @wire(getOpportunityList)
+    @wire(getSoilEnvironParam)
     wiredOpprtunityList({ error, data }) {
         if (data) {
             let atmTempValue = []
