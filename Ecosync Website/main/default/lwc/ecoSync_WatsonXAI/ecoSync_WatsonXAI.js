@@ -88,8 +88,8 @@ export default class EcoSync_WatsonXAI extends LightningElement {
         this.isSpinner = true;
         getWatsonXAIRecommendation().then(res=>{
             console.log(res['generated_text'])
-            this.translateAi();
             this.inputText = res['generated_text']
+            this.translateAi();
         }) .catch(err=>{
             console.log(err)
         })
