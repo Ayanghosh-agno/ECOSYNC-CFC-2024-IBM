@@ -180,4 +180,14 @@ public without sharing class EcoSyncController {
         public EcoSync_Daily_Log__c  monthAvg { get; set; }
     }
 
+@AuraEnabled(cacheable=true)
+public static List<EcoSync_Daily_Log__c> getSoilEnvironParam()
+    {
+        return [Select Date__c, Atmosphere_Temperature__c,Atmosphere_Humidity__c,Soil_Phosphorus__c,
+                 Rain_Percentage__c,Soil_Temperature__c,Light_Intensity__c,Soil_Potassium__c,
+                 Soil_Electric_Conductivity__c,Soil_Ph__c,Soil_Nitrogen__c,Soil_Moisture_Percentage__c,
+                 Transmitter_Battery__c from EcoSync_Daily_Log__c ORDER BY CreatedDate ASC Limit 10];
+    }
+	
+
 }
