@@ -315,7 +315,7 @@ In future I am planning to enhance/upgrade ECOSYNC in the following way :-
   - **In-Depth Soil Health Analysis**: Expand soil analysis capabilities to include more detailed health indicators and offer tailored recommendations for soil treatment and improvement.
   - **E-Commerce Integration**: Analyze collected data and recommend relevant agricultural products directly through the EcoSync website's e-commerce platform, enabling farmers to make informed purchasing decisions based on their farm's specific needs.
  
-![Roadmap](https://github.com/Ayanghosh-agno)
+![Roadmap](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Roadmap.png)
 
 <h2 align="center"> Additional Details <a name="additional-details"></a> </h2>
 
