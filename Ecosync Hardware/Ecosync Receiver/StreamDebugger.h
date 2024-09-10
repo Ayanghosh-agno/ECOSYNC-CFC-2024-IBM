@@ -1,3 +1,12 @@
+/**
+ * @file       StreamDebugger.h
+ * @author     Volodymyr Shymanskyy
+ * @license    This project is released under the MIT License (MIT)
+ * @copyright  Copyright (c) 2016 Volodymyr Shymanskyy
+ * @date       Nov 2016
+ */
+
+// https://github.com/vshymanskyy/StreamDebugger/tree/master
 
 #ifndef StreamDebugger_h
 #define StreamDebugger_h
