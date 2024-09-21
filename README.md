@@ -313,8 +313,8 @@ In future I am planning to enhance/upgrade ECOSYNC in the following way :-
   - **Alert System**: Implement an alert system that notifies farmers when specific environmental or soil parameters reach critical thresholds.
   - **Enhanced User Interface**: Upgrade the EcoSync website and app interface to improve user experience and provide more intuitive navigation and data interaction.
   - **In-Depth Soil Health Analysis**: Expand soil analysis capabilities to include more detailed health indicators and offer tailored recommendations for soil treatment and improvement.
-  - **Plant Health Prediction & recommendation**: With the upcoming release of WatsonX AI supporting image analysis and IBM Maximo Visual Inspection, EcoSync will soon offer plant health diagnostics based on image data. This will enable farmers to get real-time insights into crop health and receive recommendations for addressing potential issues before they escalate.
   - **E-Commerce Integration**: Analyze collected data and recommend relevant agricultural products directly through the EcoSync website's e-commerce platform, enabling farmers to make informed purchasing decisions based on their farm's specific needs.
+  - **Plant Health Prediction & recommendation**: With the upcoming release of WatsonX AI supporting image analysis and IBM Maximo Visual Inspection, EcoSync will soon offer plant health diagnostics based on image data. This will enable farmers to get real-time insights into crop health and receive recommendations for addressing potential issues before they escalate.
  
 ![Roadmap](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Roadmap.png)
 
