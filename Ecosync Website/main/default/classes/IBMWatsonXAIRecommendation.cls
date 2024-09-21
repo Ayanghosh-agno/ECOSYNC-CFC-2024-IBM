@@ -18,7 +18,27 @@ public class IBMWatsonXAIRecommendation {
                         'repetition_penalty' => 1
                         },
                             'model_id' => 'meta-llama/llama-3-8b-instruct',
-                            'project_id' => 'c150f5c3-3d73-4fbe-a2ac-2560d72fd8cd'
+                            'project_id' => 'c150f5c3-3d73-4fbe-a2ac-2560d72fd8cd',
+                            'moderations' => new Map<String,Object> {
+                                'hap' => new Map<String,Object> {
+                                    'input' => new Map<String,Object> {
+                                        'enabled' => true,
+                                        'threshold' => 0.5,
+                                        'mask' => new Map<String,Object> {
+                                            'remove_entity_value' => true
+                                        }
+
+                                    },
+                                    'output' => new Map<String,Object> {
+                                        'enabled' => true,
+                                        'threshold' => 0.5,
+                                        'mask' => new Map<String,Object> {
+                                            'remove_entity_value' => true
+                                        }
+
+                                    }
+                                }
+                            }
                             };
                                 
                                 String jsonPayload = JSON.serialize(jsonMap);
