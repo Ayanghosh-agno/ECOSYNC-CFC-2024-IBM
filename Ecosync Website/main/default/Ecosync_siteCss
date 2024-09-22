@@ -17,6 +17,12 @@
 .listViewContent{
     background-color: rgb(255 255 255 / 70%);
 }
+#WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__ContentButton {
+    background: #ffffffc7 !important;
+}
+#WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__Text {
+    color: #232323 !important;
+}
 
 @media only screen and (min-width: 1710px) {
    #WACContainer.WACContainer .WACLauncher__ButtonContainer.WACLauncher__ButtonContainer--round {
