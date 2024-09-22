@@ -129,14 +129,15 @@ EcoSync leverages technology to empower farmers with the information they need t
 
 **Featured watsonx products**
 
-- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI is utilized to offer personalized farming recommendations based on real-time sensor data. By analyzing the collected data on soil health, weather conditions, and other environmental factors, Watson X AI generates actionable insights tailored to each farm's specific needs. These recommendations include optimal fertilizer applications, crop selection, and other farming practices that enhance productivity and sustainability.[Watch Here For Details](#ecosync-website-AI-Map)  
-- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WatsonX Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, WatsonX Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync.[Watch Here For Details](#ecosync-website-bot)  
+- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI, powered by the **'meta-llama/llama-3-8b-instruct'** model and integrated with **AI guardrails**, delivers personalized farming recommendations in EcoSync. By analyzing real-time sensor data on soil health, weather, and environmental factors, it provides actionable insights such as optimal fertilizer use and crop selection. These recommendations are tailored to each farm’s specific needs, enhancing both productivity and sustainability while ensuring safe and responsible AI use. [Watch Here For Details](#ecosync-website-AI-Map)  
+
+- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WatsonX Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, WatsonX Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync. [Watch Here For Details](#ecosync-website-bot)  
 
 ### Other IBM technology used <a name="other-ibm-technology-used"></a>
 
 **Additional IBM AI services**
 
-- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience.[Watch Here For Details](#ecosync-website-multilingual)  
+- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience. [Watch Here For Details](#ecosync-website-multilingual)  
 
 ### Solution Architecture <a name="solution-architecture"></a>
 
