@@ -302,6 +302,7 @@ Currently ECOSYNC offers the following features :-
   - **LORA Communication**: Enables data transmission from the transmitter to the receiver over a range of up to 5 kilometers.
   - **GSM-Based Cloud Data Sync**: Transfers collected data to the cloud every 15 seconds for remote access and storage using a GSM module.
   - **AI-Driven Farming Recommendations**: Provides personalized recommendations on fertilizers and crop selection using Watson X AI, tailored to each farm’s conditions.
+  - **Plant Health Prediction** : EcoSync offers plant health analysis using WatsonX AI leveraging the 'llama3-llava-next-8b-hf' model to identify disease type, cause, life cycle, and remedies based on image data. This will enable farmers to get real-time insights into crop health and receive recommendations for addressing potential issues before they escalate.
   - **Multilingual Support**: Powered by Watson Language Translator, the platform supports eight languages, making it accessible to a global audience.
   - **Chatbot and Live Agent Support**: Includes a Watson Assistant-powered chatbot for quick resolutions and seamless transition to live agents via Visualforce pages for real-time assistance. All chat interactions, transcripts, and user information are stored in Service Cloud objects.
   - **Comprehensive Data Visualization**: Visualizes real-time and historical farm data on the EcoSync website using graphical or tabular foramt.
@@ -310,6 +311,7 @@ Currently ECOSYNC offers the following features :-
   - **SMS or Email Notifications**: Sends SMS or email notifications to users with the latest data updates, ensuring they stay informed about their farm's current conditions.
   - **Offline Operation**:The EcoSync transmitter and receiver can operate independently of network or Wi-Fi connectivity, ensuring uninterrupted functionality in remote areas.
 
+
 In future I am planning to enhance/upgrade ECOSYNC in the following way :- 
 
   - **SOS System**: Add a voice-enabled SOS system on the EcoSync Receiver, allowing farmers to directly call customer service using the device’s built-in GSM module.
@@ -317,7 +319,7 @@ In future I am planning to enhance/upgrade ECOSYNC in the following way :-
   - **Enhanced User Interface**: Upgrade the EcoSync website and app interface to improve user experience and provide more intuitive navigation and data interaction.
   - **In-Depth Soil Health Analysis**: Expand soil analysis capabilities to include more detailed health indicators and offer tailored recommendations for soil treatment and improvement.
   - **E-Commerce Integration**: Analyze collected data and recommend relevant agricultural products directly through the EcoSync website's e-commerce platform, enabling farmers to make informed purchasing decisions based on their farm's specific needs.
-  - **Plant Health Prediction & recommendation**: With the upcoming release of WatsonX AI supporting image analysis and IBM Maximo Visual Inspection, EcoSync will soon offer plant health diagnostics based on image data. This will enable farmers to get real-time insights into crop health and receive recommendations for addressing potential issues before they escalate.
+  
  
 ![Roadmap](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Roadmap.png)
 
