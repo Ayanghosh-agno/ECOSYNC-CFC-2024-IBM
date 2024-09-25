@@ -75,7 +75,7 @@ EcoSync addresses critical agricultural challenges with integrated hardware and 
 
 - Many farmers lack access to <strong> real-time data and timely support </strong>. EcoSync’s receiver displays real-time data and transmits it to the cloud every 15 seconds. The website provides instant access to this data.
 
-- <strong> Access to expert advice</strong> can be limited. EcoSync utilizes Watson X AI to provide personalized recommendations on fertilizers and crop selection, tailored to each farm's unique conditions. Additionally, EcoSync features a WatsonX Assistant-powered chatbot for quick solutions or seamless connection to a live agent for support.
+- <strong> Access to expert advice</strong> can be limited. EcoSync utilizes Watson X AI to provide personalized recommendations on fertilizers and crop selection, tailored to each farm's unique conditions. Additionally, EcoSync incorporates a Plant Disease prediction feature using WatsonX AI, enabling farmers to upload plant photos and receive detailed insights on disease type, life cycle, causes, and remedies. EcoSync also includes a WatsonX Assistant-powered chatbot for quick resolutions or connection to a live agent for personalized support.
 
 - <strong> Language barriers</strong> can limit access to information. EcoSync’s website, integrated with Watson Language Translator, supports eight languages, ensuring inclusivity and widespread adoption.
 
@@ -116,7 +116,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
 
   - **Support:** Users can lodge cases and access a WatsonX Assistant powered chatbot for quick queries or live agent support for more complex issues.
 
-  - **AI Integration:** Watson X AI offers personalized recommendations to optimize farming practices.
+  - **AI Integration:** Watson X AI, integrated with AI guardrails, provides personalized recommendations on farming practices, including fertilizer application and crop selection. It also incorporates a Plant Disease Prediction feature, using WatsonX.AI incorporated with **llama3-llava-next-8b-hf** model, to display disease type, cause, life cycle, and remedies based on plant photos uploaded by farmers.
 
   - **Language Support:** The website supports eight languages through Watson Language Translator.
 
@@ -129,7 +129,7 @@ EcoSync leverages technology to empower farmers with the information they need t
 
 **Featured watsonx products**
 
-- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI, powered by the **'meta-llama/llama-3-8b-instruct'** model and integrated with **AI guardrails**, delivers personalized farming recommendations in EcoSync. By analyzing real-time sensor data on soil health, weather, and environmental factors, it provides actionable insights such as optimal fertilizer use and crop selection. These recommendations are tailored to each farm’s specific needs, enhancing both productivity and sustainability while ensuring safe and responsible AI use. [Watch Here For Details](#ecosync-website-AI-Map)  
+- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - Watson X AI, powered by the **'meta-llama/llama-3-8b-instruct'** model and integrated with **AI guardrails**, delivers personalized farming recommendations in EcoSync. By analyzing real-time sensor data on soil health, weather, and environmental factors, it provides actionable insights such as optimal fertilizer use and crop selection. These recommendations are tailored to each farm’s specific needs, enhancing both productivity and sustainability while ensuring safe and responsible AI use. Additionally, EcoSync includes a Plant Disease Prediction feature, leveraging the **'llama3-llava-next-8b-hf'** model to identify disease type, cause, life cycle, and remedies based on plant photos uploaded by the farmer. [Watch Here For Details](#ecosync-website-AI-Map)  
 
 - [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WatsonX Assistant is employed to handle initial user interactions and answer common queries through a chatbot. It efficiently addresses routine questions and issues, providing instant assistance to users. For more complex inquiries, WatsonX Assistant facilitates seamless transitions to live agents, ensuring that users receive timely and relevant support throughout their experience with EcoSync. [Watch Here For Details](#ecosync-website-bot)  
 
