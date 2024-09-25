@@ -302,7 +302,7 @@ Currently ECOSYNC offers the following features :-
   - **LORA Communication**: Enables data transmission from the transmitter to the receiver over a range of up to 5 kilometers.
   - **GSM-Based Cloud Data Sync**: Transfers collected data to the cloud every 15 seconds for remote access and storage using a GSM module.
   - **AI-Driven Farming Recommendations**: Provides personalized recommendations on fertilizers and crop selection using Watson X AI, tailored to each farm’s conditions.
-  - **Plant Health Prediction** : EcoSync offers plant health analysis using WatsonX AI leveraging the 'llama3-llava-next-8b-hf' model to identify disease type, cause, life cycle, and remedies based on image data. This will enable farmers to get real-time insights into crop health and receive recommendations for addressing potential issues before they escalate.
+  - **Plant Health Prediction** : EcoSync offers plant health analysis using WatsonX AI leveraging the 'llama3-llava-next-8b-hf' model to identify disease type, cause, life cycle, and remedies based on image data.
   - **Multilingual Support**: Powered by Watson Language Translator, the platform supports eight languages, making it accessible to a global audience.
   - **Chatbot and Live Agent Support**: Includes a Watson Assistant-powered chatbot for quick resolutions and seamless transition to live agents via Visualforce pages for real-time assistance. All chat interactions, transcripts, and user information are stored in Service Cloud objects.
   - **Comprehensive Data Visualization**: Visualizes real-time and historical farm data on the EcoSync website using graphical or tabular foramt.
