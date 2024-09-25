@@ -1,15 +1,20 @@
 <template>
 	<div class="farm-recommendations ">
-		
 		<h2 class="heading">{heading}</h2>
 		<div lwc:if={desktopView}>
-		<lightning-formatted-rich-text value={formattedText}></lightning-formatted-rich-text>
+			<lightning-formatted-rich-text value={formattedText}></lightning-formatted-rich-text>
 		</div>
 		<div lwc:if={mobileView}>
-		<lightning-formatted-rich-text value={formattedTextMobile}></lightning-formatted-rich-text>
+			<lightning-formatted-rich-text value={formattedTextMobile}></lightning-formatted-rich-text>
 		</div>
-        <div lwc:if={isSpinner} style="position:relative;height: 90px;">
+
+		<template if:true={isSpinner}>
+			<div class="loader"></div>
+		</template>
+
+
+		<!-- <div lwc:if={isSpinner} style="position:relative;height: 90px;">
 			<lightning-spinner alternative-text="Loading" variant="brand" size="medium"></lightning-spinner>
-		</div>
+		</div> -->
 	</div>
 </template>
