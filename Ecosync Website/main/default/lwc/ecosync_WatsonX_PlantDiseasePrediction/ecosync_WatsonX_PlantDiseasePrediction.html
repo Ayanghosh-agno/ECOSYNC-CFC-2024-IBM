@@ -1,0 +1,30 @@
+<template>
+	<div class="farm-recommendations ">
+		<div class="banner-content">
+			<h1>{heading}</h1>
+			<input id="file-input1" type="file" accept="image/*" onchange={handleFileChange} class="file-input" />
+			<label for="file-input1" class="predict-button">{buttonText}</label>
+		</div>
+		<template if:true={fileName}>
+			<div class="image-preview" key={imageUrl}>
+				<img src={imageUrl} alt="Uploaded Image" class="image">
+			</div>
+
+			<div class="description" key={fileName}>
+				<h2
+					style="font-style: italic;font-size: 16px;color: #7d7d7d;font-weight: 600;font-family: serif;text-decoration: underline;">
+					{imageChoosenText} - {fileName}</h2>
+				<!-- <p>{description}</p> -->
+			</div>
+			<div lwc:if={desktopView}>
+				<lightning-formatted-rich-text value={formattedText}></lightning-formatted-rich-text>
+			</div>
+			<div lwc:if={mobileView}>
+				<lightning-formatted-rich-text value={formattedTextMobile}></lightning-formatted-rich-text>
+			</div>
+		</template>
+		<template if:true={isLoading}>
+			<div class="loader"></div>
+		</template>
+	</div>
+</template>
