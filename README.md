@@ -223,7 +223,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
       -  [ECOSYNC_DataReport.email](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/email/unfiled%24public) - Custom Email Template used to send email with sensors data to the user.
       -  [ecoSyncSensorsData](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncSensorsData) - LWC to receive the user email id / mobile number using a modal popup on click of the action buttons.
    
-  -  #### Personalised Recommendation using WatsonX AI & Interactive Maps <a name="ecosync-website-AI-Map"></a>
+  -  #### Personalised Recommendation, Plant Disease Analysis using WatsonX AI & Interactive Maps <a name="ecosync-website-AI-Map"></a>
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20AI%20%26%20Interactive%20Map.png">
 
@@ -231,7 +231,9 @@ The system is enhanced with several integrations along with IBM Cloud, including
 
       -  [ecoSync_WatsonXAI](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSync_WatsonXAI) - LWC where the WatsonX.ai recommendations are shown and formated.
       -  [IBMWatsonXAIRecommendation.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMWatsonXAIRecommendation.cls) - Apex class to make callout to WatsonX.ai for personalized reccomendations depending upon the latest sensors value & field conditions.
-      -  [IBMIdentityAuthToken](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMIdentityAuthToken.cls) - APEX class to get the IBM Cloud authorization token.
+      -  [ecosync_WatsonX_PlantDiseasePrediction](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecosync_WatsonX_PlantDiseasePrediction) - LWC where the image of the plant uploaded by the farmer is sent to the APEX class and the response from the WatsonX AI is processed and formated to display to the farmer.
+      -  [WatsonXAIService.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/WatsonXAIService.cls) - APEX class to make the callout to WatsonX AI for plant disease prediction from the image uplaoded by the farmer.
+      -   [IBMIdentityAuthToken](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/IBMIdentityAuthToken.cls) - APEX class to get the IBM Cloud authorization token.
       -  [ecoSyncMapComponent](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncMapComponent) - LWC where the map pointers with field parameters are shown.
    
   -  #### Historical Data & Graphical Representation <a name="ecosync-website-HistoricData"></a>
