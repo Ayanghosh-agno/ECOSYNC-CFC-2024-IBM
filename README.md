@@ -91,7 +91,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
   
   - **Advanced Sensors:** Capture comprehensive environmental data (atmospheric temperature, humidity, rain %, sunlight %, GPS location) and detailed soil metrics (N, P, K levels, EC, pH, temperature, moisture) for precision farming.
 
-  - **Power Supply:** Operates on a 4x4100mAh Li-ion battery charged by 6x5V solar panels, ensuring up to 9 days of operation without sunlight.
+  - **Power Supply:** Operates on a 2x2200mAh Li-ion battery, charged by 6x5V solar panels, ensuring up to 136.43 hrs(Approx.) of operation without sunlight when connected with network & up to 183 hrs(Approx.) without network. [Watch Here For Details](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Transmitter%20Battery%20Capacity.png)
 
   - **Data Transmission:** Uses LORA technology to transmit data over a 5 KM range.
 
