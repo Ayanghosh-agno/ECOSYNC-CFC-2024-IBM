@@ -100,7 +100,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
   
   - **Display:** Shows real-time data received from the transmitter.
   
-  - **Cloud Integration:** Uses a GSM module to send data to the cloud at 15-second intervals.
+  - **Cloud Integration:** Uses a GSM module to send data to the cloud at 20-second intervals.
 
 **3. Website:** (Salesforce Experience Cloud + Service Cloud)
 
