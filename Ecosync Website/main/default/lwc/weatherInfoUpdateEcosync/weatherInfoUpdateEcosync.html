@@ -4,10 +4,10 @@
 		<div class="weather-info weather-info slds-col">
 			<template lwc:if={cityName}>
 				<div class="weather-container-box">
-				<div class="weather-icon-wrapper">
-					<p class="weather-date-time slds-align_absolute-center">{cityName}</p>
-					<img src={weatherIcon} class="slds-align_absolute-center" alt="weather-icon" width="120px" />
-            </div>
+					<div class="weather-icon-wrapper">
+						<p class="weather-date-time slds-align_absolute-center">{cityName}</p>
+						<img src={weatherIcon} class="slds-align_absolute-center" alt="weather-icon" width="120px" />
+					</div>
 					<div class="weather-temp-wrapper">
 						<h3 class="weather-temperature slds-align_absolute-center">{currentTemp}&deg;C</h3>
 						<p class="weather-description slds-align_absolute-center">{weatherDescription}</p>
@@ -32,19 +32,32 @@
 			</template>
 
 			<template lwc:else>
-				<div slot="primary-metric" class="demo-only" style="height: 66.5px; position: relative">
-					<div class="slds-spinner_container">
-						<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
-							<span class="slds-assistive-text">Loading</span>
-							<div class="slds-spinner__dot-a"></div>
-							<div class="slds-spinner__dot-b"></div>
+				<template lwc:if={error}>
+					<div class="weather-container-box" style="max-width:50%">
+						<div class="weather-icon-wrapper">
+							<p class="weather-date-time slds-align_absolute-center">Failed to fetch weather update !</p>
+							<img src={errorIcon} class="slds-align_absolute-center" alt="weather-icon" width="200px" />
+						</div>
+						<div class="weather-temp-wrapper">
+							<h3 class="weather-temperature slds-align_absolute-center" style="font-size:24px">{error}</h3>
 						</div>
 					</div>
-				</div>
+				</template>
+				<template lwc:else>
+					<div slot="primary-metric" class="demo-only" style="height: 66.5px; position: relative">
+						<div class="slds-spinner_container">
+							<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+								<span class="slds-assistive-text">Loading</span>
+								<div class="slds-spinner__dot-a"></div>
+								<div class="slds-spinner__dot-b"></div>
+							</div>
+						</div>
+					</div>
+				</template>
 			</template>
 		</div>
 
-		<div class="weather-details slds-col" style="">
+		<div class="weather-details slds-col" style="" if:false={error}>
 			<div class="slds-m-bottom_medium">
 				<div class="slds-grid slds-wrap" style="gap:10px">
 					<!-- UV Index Slot -->
@@ -60,8 +73,7 @@
 								<div slot="primary-metric" class="demo-only" style="height: 66.5px; position: relative">
 									<div class="slds-spinner_container">
 										<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
-											<span class="slds-assistive-text"
-                                            >Loading</span>
+											<span class="slds-assistive-text">Loading</span>
 											<div class="slds-spinner__dot-a"></div>
 											<div class="slds-spinner__dot-b"></div>
 										</div>
@@ -77,13 +89,13 @@
                                             alt="Wind Direction"
                                             width="40px"
                                         />
-                                    </div>
-											<div class="slds-p-vertical_x-small">
-												<p class="secondary-metric">
-													{uvRadiationLevel}
-												</p>
-											</div>
 										</div>
+										<div class="slds-p-vertical_x-small">
+											<p class="secondary-metric">
+												{uvRadiationLevel}
+											</p>
+										</div>
+									</div>
 								</template>
 							</div>
 						</c-highlight-slot>
@@ -119,13 +131,13 @@
                                             alt="Wind Direction"
                                             width="40px"
                                         />
-                                    </div>
-											<div class="slds-p-vertical_x-small">
-												<p class="secondary-metric">
-													{windDirection}
-												</p>
-											</div>
 										</div>
+										<div class="slds-p-vertical_x-small">
+											<p class="secondary-metric">
+												{windDirection}
+											</p>
+										</div>
+									</div>
 								</template>
 							</div>
 						</c-highlight-slot>
@@ -212,13 +224,13 @@
                                             alt="Wind Direction"
                                             width="40px"
                                         />
-                                    </div>
-											<div class="slds-p-vertical_x-small">
-												<p class="secondary-metric">
-													{humidityLevel}
-												</p>
-											</div>
 										</div>
+										<div class="slds-p-vertical_x-small">
+											<p class="secondary-metric">
+												{humidityLevel}
+											</p>
+										</div>
+									</div>
 								</template>
 							</div>
 						</c-highlight-slot>
@@ -254,13 +266,13 @@
                                             alt="Wind Direction"
                                             width="40px"
                                         />
-                                    </div>
-											<div class="slds-p-vertical_x-small">
-												<p class="secondary-metric">
-													{visibilityLevel}
-												</p>
-											</div>
 										</div>
+										<div class="slds-p-vertical_x-small">
+											<p class="secondary-metric">
+												{visibilityLevel}
+											</p>
+										</div>
+									</div>
 								</template>
 							</div>
 						</c-highlight-slot>
@@ -295,13 +307,13 @@
                                             alt="Wind Direction"
                                             width="40px"
                                         />
-                                    </div>
-											<div class="slds-p-vertical_x-small">
-												<p class="secondary-metric">
-													{dewPointLevel}
-												</p>
-											</div>
 										</div>
+										<div class="slds-p-vertical_x-small">
+											<p class="secondary-metric">
+												{dewPointLevel}
+											</p>
+										</div>
+									</div>
 								</template>
 							</div>
 						</c-highlight-slot>
