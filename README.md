@@ -384,6 +384,9 @@ We can see live working of Ecosync Website - [Here](https://agno-dev-ed.develop.
 
    **Ayan Ghosh**
 
+NOTE :- To ensure clarity, it’s important to emphasize that EcoSync (2024 Call for Code solution) is a completely different project from [Farmistar](https://developer.ibm.com/callforcode/solutions/2023-solutions/) (2023 Call for Code solution under team - AGNO). While Farmistar served as an all-in-one marketplace for agriculture, EcoSync focuses on a hardware and software-based approach specifically designed to help farmers optimize land management for better yields. Developed from the ground up in 2024, EcoSync brings a fresh and unique solution with no connection to Farmistar, addressing distinct challenges faced by farmers today.
+
+
 ### License<a name="license"></a>
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
 
