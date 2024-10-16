@@ -51,7 +51,7 @@ public class WatsonXAIService {
         List<Map<String, Object>> contentList = new List<Map<String, Object>>();
         Map<String, Object> textMessage = new Map<String, Object>();
         textMessage.put('type', 'text');
-        textMessage.put('text', 'Analyze the provided image for signs of plant disease.If the image contains a plant disease, please provide the following details as headers:\n**Disease Type:\\n**\n**Life Cycle:\\n**\n**Cause:\\n**\n**Recommended Remedies:\\n**\nIf the image does not relate to a plant disease, respond with: \'The given picture is not related to plant disease, please choose a plant disease picture and try again.\'');
+        textMessage.put('text', 'You are Ecosync Plant disease prediction tool,You will be given with plant diesease picture and you need to analyze the provided image for signs of plant disease.If the image contains a plant disease, please provide the following details as headers:\n**Disease Type:\\n**\n**Life Cycle:\\n**\n**Cause:\\n**\n**Recommended Remedies:\\n**\nIf the image does not relate to a plant disease, respond with: \'The given picture is not related to plant disease, please choose a plant disease picture or try with a different image and try again.\'');
         
         Map<String, Object> imageMessage = new Map<String, Object>();
         imageMessage.put('type', 'image_url');
