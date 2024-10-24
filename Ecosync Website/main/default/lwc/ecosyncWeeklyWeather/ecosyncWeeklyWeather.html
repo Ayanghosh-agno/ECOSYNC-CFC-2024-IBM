@@ -1,0 +1,56 @@
+<template>
+    <div class="weather-container" lwc:if={weatherDataWeekly}>
+        <button class="scroll-button left-button" onclick={scrollLeft}>&lt;</button>
+
+        <template for:each={weatherDataWeekly} for:item="day" for:index="index">
+            <div key={day.name} class="weather-card">
+                <div class="weather-header">
+                    <h3 class="day-name">{day.day}, {day.dayName}</h3>
+                </div>
+                <!-- <div class="temp-range">
+                        <div class="temp max-temp">Max: {day.maxTemp}°C</div>
+                        <div class="temp min-temp">Min: {day.minTemp}°C</div>
+                    </div> -->
+                <div class="sunrise-sunset">
+                    <img src={iconMaxTemp} width="50px">
+                                Max Temp: {day.maxTemp}°C<br />
+                    <img src={iconSunrise} width="50px">
+                                Sunrise: {day.sunrise}
+                </div>
+
+                <div class="weather-details">
+                    <div class="day-info" if:true={day.dayTemp}>
+                        <h4 class="section-label" style="border-bottom: 2px solid black;">Day</h4>
+                        <img src={day.dayIcon} alt="Day Weather Icon" class="weather-icon day-icon"/>
+                        <p><strong>Temperature:</strong> {day.dayTemp}°C</p>
+                        <p><img src={raindropImg} alt="precipitation icon" class="precipitation-icon" /> {day.dayPrecp}%
+                        </p>
+                        <p><strong>Humidity:</strong> {day.dayHumid}%</p>
+                        <p><strong>Wind:</strong> {day.daywindDirection}  {day.daywindSpeed} km/hr </p>
+                    </div>
+                    <div class="night-info">
+                        <h4 class="section-label" style="color: #ffffff;border-bottom: 2px solid #fdfdfd;">Night
+                        </h4> <!-- Added Label -->
+                        <img src={day.nightIcon} alt="Night Weather Icon" class="weather-icon night-icon"/>
+                        <p><strong>Temperature:</strong> {day.nightTemp}°C</p>
+                        <p><img src={raindropImg} alt="precipitation icon" class="precipitation-icon" /> {day.nightPrecp}%
+                        </p>
+                        <p><strong>Humidity:</strong> {day.nightHumid} %</p>
+                        <p><strong>Wind:</strong> {day.nightwindDirection}  {day.nightwindSpeed} km/hr </p>
+                    </div>
+                </div>
+                <div class="sunrise-sunset">
+                    <img src={iconMinTemp} width="50px">
+                                Min Temp: {day.minTemp}°C<br />
+                    <img src={iconSunset} width="50px">
+                                Sunset: {day.sunset}
+                </div>
+            </div>
+        </template>
+        <button class="scroll-button right-button" onclick={scrollRight}>&gt;</button>
+
+    </div>
+    <div lwc:else>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </div>
+</template>

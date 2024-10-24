@@ -1,0 +1,43 @@
+.forecast-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9a1; /* Light gray background */
+    border-radius: 10px;
+    position: relative; /* Needed for absolute positioning of button container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px; /* Space between buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+    font-size: 14px; /* Increase font size for better readability */
+}
+
+/* Active button color */
+.active-button {
+    background-color: #28a745; /* Green color for active button */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Inactive button color */
+.inactive-button {
+    background-color: #6c757d; /* Gray color for inactive button */
+    color: white;
+}
+
+/* Hover effect for both buttons */
+button:hover {
+    background-color: #218838; /* Darker green for active button on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Additional hover effect for inactive button */
+.inactive-button:hover {
+    background-color: #5a6268; /* Darker gray for hover */
+}

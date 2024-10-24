@@ -1,0 +1,16 @@
+<template>
+    <div class="forecast-container" if:false={error}>
+        <div class="button-container">
+            <button class={dailyButtonClass} onclick={showDailyForecast}>Daily</button>
+            <button class={weeklyButtonClass} onclick={showWeeklyForecast}>Weekly</button>
+        </div>
+
+        <template if:true={isDaily}>
+            <c-ecosync-daily-weather></c-ecosync-daily-weather>
+        </template>
+        
+        <template if:true={isWeekly}>
+            <c-ecosync-weekly-weather></c-ecosync-weekly-weather>
+        </template>
+    </div>
+</template>

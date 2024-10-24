@@ -1,0 +1,180 @@
+.weather-container {
+    border-radius: 16px;
+   display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* background-color: rgba(248, 249, 250, 0.55); */
+    padding: 40px;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    min-width: 380px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.weather-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.weather-header {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.day-name {
+    font-size: 26px;
+    margin: 0;
+    color: #0070d2; /* Indigo color for day name */
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.temp-range {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff6f61, #de3d4f); /* Warm gradient for temperature range */
+    color: white; /* White text for better contrast */
+}
+
+.max-temp, .min-temp {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sunrise-sunset {
+    font-size: 14px;
+    color: #555;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap:10px;
+}
+
+.day-info, .night-info {
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.8); */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+.day-info{
+    background:url('https://i.postimg.cc/wxWS6hwG/pexels-francesco-ungaro-281260.jpg') no-repeat center/cover;
+}
+.night-info {
+    background:url('https://i.postimg.cc/NMnwqrf2/beautiful-night-sky-with-shiny-stars.jpg') no-repeat center/cover;
+}
+
+/* .day-info:hover, .night-info:hover {
+    background: rgba(200, 200, 255, 0.6);
+} */
+
+.weather-icon {
+    animation: bounce 5s infinite;
+    width: 60px; /* Slightly larger icon size for better visibility */
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+}
+
+.weather-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.day-info p{
+    margin: 5px 0;
+    font-size: 17px;
+    font-family:emoji;
+    color: rgb(0, 0, 0);
+
+}
+.night-info p {
+    margin: 5px 0;
+    font-family:emoji;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+    .weather-card {
+        width: 90%;
+    }
+    .scroll-button {
+        font-size: 1.5rem !important;
+    }
+}
+
+.section-label {
+    font-size: 16px;
+    font-weight: bold;
+    
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fdfdfd; /* Underline for emphasis */
+    padding-bottom: 5px; /* Space below the label */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.precipitation-icon {
+    width: 80px;
+    margin-right: -12px;
+}
+.scroll-button {
+    background-color: #d1e2ff;
+    border: 1px solid #001d54;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    height:60px;
+    z-index: 10;
+    font-size: 2.5rem;
+    color: #333;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 68%);
+    transition: background-color 0.3s;
+}
+.scroll-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.left-button {
+    left: 0px; /* Position left button */
+}
+
+.right-button {
+    right: 0px; /* Position right button */
+}
+.scroll-button.hidden {
+    display: none; /* Hide the button when the 'hidden' class is applied */
+}
