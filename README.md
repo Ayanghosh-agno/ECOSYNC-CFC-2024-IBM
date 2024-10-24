@@ -70,7 +70,7 @@ EcoSync addresses critical agricultural challenges with integrated hardware and 
 
 - <strong> Water scarcity</strong> is a major issue, with agriculture accounting for 70% of global freshwater withdrawals. EcoSync’s sensors monitor soil moisture, humidity, and rainfall, optimizing irrigation to reduce water waste.
 
-- <strong> Climate change</strong> leads to unpredictable weather, affecting crop yields. EcoSync provides real-time weather data and AI-driven recommendations, helping farmers make informed decisions about planting and harvesting.
+- <strong>Climate change</strong> creates unpredictable weather patterns that disrupt crop yields. EcoSync delivers real-time weather updates, 24-hour data, and a 15-day forecast, combined with AI-driven insights, enabling farmers to make informed decisions on planting and harvesting.
 
 - Farmers often lack <strong> precise information </strong>, leading to inefficient resource use. Our comprehensive data collection and AI recommendations enable precise resource management, improving yields and reducing costs.
 
@@ -105,7 +105,7 @@ EcoSync aims to revolutionize farming by combining cutting-edge hardware with in
 
 **3. Website:** (Salesforce Experience Cloud + Service Cloud)
 
-  - **Dashboard:** Provides an overview of land details, weather conditions, and sensor data.
+  - **Dashboard:** Provides an overview of land details, weather conditions, and sensor data.EcoSync also offers hourly weather updates and a daily weather forecast to help farmers plan their activities more effectively.
   
   - **Historical Data:** Allows users to view and download historical data, facilitating trend analysis and informed decision-making.
 
@@ -138,7 +138,9 @@ EcoSync leverages technology to empower farmers with the information they need t
 
 **Additional IBM AI services**
 
-- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience. [Watch Here For Details](#ecosync-website-multilingual)  
+- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - Watson Language Translator is integrated to make the website multilingual. This feature ensures that users from diverse linguistic backgrounds can access and understand the platform's information and recommendations. By supporting eight languages, Watson Language Translator enhances inclusivity and broadens the reach of EcoSync, making it accessible to a global audience. [Watch Here For Details](#ecosync-website-multilingual)
+
+- [IBM Environmental Intelligence Suite APIs](https://github.com/Call-for-Code/CFC-IBM-Weather-APIs) - provide detailed weather updates, including hourly forecasts for up to 24 hours and daily forecasts for up to 15 days. This enables farmers to make timely, informed decisions on planting, harvesting, and other vital operations. [Watch Here for Deails](#ecosync-website-WeatherFieldSensor)
 
 ### Solution Architecture <a name="solution-architecture"></a>
 
@@ -163,7 +165,7 @@ EcoSync's Salesforce ecosystem is powered by Service Cloud and Experience Cloud.
 
 **6. IBM Cloud, Weather API & NEXMO API Integrations**
 
-The system is enhanced with several integrations along with IBM Cloud, including Nexmo SMS API for sending critical alerts to farmers, OpenWeather API for integrating real-time weather data all backed and integrated into Salesforce Experience Cloud (Ecosync Website). 
+The system is enhanced with several integrations along with IBM Cloud, including Nexmo SMS API for sending critical alerts to farmers,IBM Environmental Intelligence Suite APIs for daily and hourly weather updates, OpenWeather API for integrating real-time weather data all backed and integrated into Salesforce Experience Cloud (Ecosync Website). 
 
 
 <h2 align="center"> Detailed Description <a name="detail-materials"></a> </h2>
@@ -204,7 +206,7 @@ The system is enhanced with several integrations along with IBM Cloud, including
       -  [EcoSyncDailySchedule.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncDailySchedule.cls) - Schedule APEX class to store the each day average data in the Salesforce Object at the end of the day.
                 
    
-  - #### Weather & Field Sensors Update <a name="ecosync-website-WeatherFieldSensor"></a>
+  - #### Current, Hourly, Daily Weather & Field Sensors Update <a name="ecosync-website-WeatherFieldSensor"></a>
 
     <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync_Weather_Field_Sensor.png">
   
@@ -213,7 +215,11 @@ The system is enhanced with several integrations along with IBM Cloud, including
       -  [EcoSyncController.cls](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Ecosync%20Website/main/default/classes/EcoSyncController.cls) - Apex class to fetch the latest and 30days average sensor data from Salesforce Object.
       -  [weatherInfoUpdateEcosync](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/weatherInfoUpdateEcosync) - LWC to show the current weather depending upon the geo-location & doing a client side API call to openWeather API.
       -  [ecoSyncSensorsData](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecoSyncSensorsData) - LWC to show the sensor details section, Notification buttons & Detail page button.
-   
+      -  [ecosyncDailyWeather](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecosyncDailyWeather) - LWC to show horly weather updates upto 24hr using IBM Environmental Intellegence Suite.
+      -  [ecosyncWeeklyWeather](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecosyncWeeklyWeather) - LWC to show daily weather condition upto 15days using IBM Environmental Intellegence Suite.
+      -  [ecosyncDailyWeeklyTrigger](https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/tree/main/Ecosync%20Website/main/default/lwc/ecosyncDailyWeeklyTrigger) - LWC to give the user the prefference to choose between hourly & daily updates.
+
+
   -  #### Field Sensors Alert Using SMS or Email <a name="ecosync-website-FieldSensorAlert"></a>
 
   <img src="https://github.com/Ayanghosh-agno/ECOSYNC-CFC-2024-IBM/blob/main/Assets/Ecosync%20Sensor%20Updates.png">
