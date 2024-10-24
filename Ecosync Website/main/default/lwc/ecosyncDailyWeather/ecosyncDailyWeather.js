@@ -1,5 +1,5 @@
 import { LightningElement, track } from 'lwc';
-const API_KEY = 'a5dba76710624a0d9ba76710627a0d2c'; 
+const API_KEY = 'CALL_FOR_CODE_2024';
 import WEATHER_ICON_SVG from "@salesforce/resourceUrl/EcosyncNewWeather";
 import WEATHER_ICON_SVG1 from "@salesforce/resourceUrl/Ecosync";
 
